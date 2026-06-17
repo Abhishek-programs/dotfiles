@@ -1,0 +1,6 @@
+font-family = JetBrainsMono Nerd Font
+font-size = 14
+cursor-style = block
+copy-on-select = true
+
+theme = nord

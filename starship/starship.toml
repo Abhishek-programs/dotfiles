@@ -1,0 +1,17 @@
+add_newline = true
+
+format = """
+$directory\
+$git_branch\
+$git_status\
+$nodejs\
+$line_break\
+$character
+"""
+
+[directory]
+truncate_to_repo = true
+
+[character]
+success_symbol = "[❯](green)"
+error_symbol = "[❯](red)"
