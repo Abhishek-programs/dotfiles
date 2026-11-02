@@ -2,7 +2,24 @@
 
 ## Install
 
+Run from the repository in Terminal:
+
 ```bash
-git clone git@github.com:abhishek-programs/dotfiles.git
-cd dotfiles
 ./install.sh
+```
+
+The interactive menu uses these keys:
+
+- `A`: Full setup: clear the Dock if needed, run the package/configuration setup, clear any app icons added during installation, then create or show the SSH key.
+- `D`: Clear all pinned Dock apps and folders, and disable suggested/recent Dock items.
+- `I`: Run the package/configuration setup only.
+- `S`: Create or show the default Ed25519 SSH key with the `personal_mac` comment.
+
+You can also pass a key directly, for example `./install.sh D` or `./install.sh A`.
+The installer installs Node LTS through NVM, installs Corepack if the selected Node
+version does not provide it, activates pnpm, and configures Ghostty and macOS
+Terminal to use JetBrainsMono Nerd Font Mono for fixed-width text and terminal icons.
+
+The SSH helper prompts for a passphrase when creating a new key and refuses to
+overwrite a different existing `~/.ssh/id_ed25519` key. If the existing key already
+has the `personal_mac` comment, it prints the public key and leaves it unchanged.
