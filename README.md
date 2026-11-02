@@ -20,6 +20,4 @@ The installer installs Node LTS through NVM, installs Corepack if the selected N
 version does not provide it, activates pnpm, and configures Ghostty and macOS
 Terminal to use JetBrainsMono Nerd Font Mono for fixed-width text and terminal icons.
 
-The SSH helper prompts for a passphrase when creating a new key and refuses to
-overwrite a different existing `~/.ssh/id_ed25519` key. If the existing key already
-has the `personal_mac` comment, it prints the public key and leaves it unchanged.
+The SSH helper creates the default `~/.ssh/id_ed25519` key with a passphrase prompt, configures an OpenSSH GitHub host entry, starts or reuses `ssh-agent`, and adds the key with Apple Keychain support when it has a passphrase. It reuses an existing default key without overwriting it.
