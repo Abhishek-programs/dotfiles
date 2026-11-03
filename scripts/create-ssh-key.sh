@@ -51,9 +51,6 @@ fi
 tmp_dropin="$dropin.tmp.$$"
 {
   printf 'Host github.com\n'
-  printf '  HostName ssh.github.com\n'
-  printf '  Port 443\n'
-  printf '  User git\n'
   printf '  AddKeysToAgent yes\n'
   if (( has_passphrase )); then
     printf '  UseKeychain yes\n'
