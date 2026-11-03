@@ -18,10 +18,13 @@ brew "watchman"
 
 brew "wget"
 brew "coreutils"
+brew "maccy"
 
 cask "ghostty"
 cask "orbstack"
 cask "raycast"
 cask "postman"
+cask "unnaturalscrollwheels"
+cask "betterdisplay"
 
 cask "font-jetbrains-mono-nerd-font"

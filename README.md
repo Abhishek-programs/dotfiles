@@ -1,4 +1,5 @@
 # Dotfiles
+This is a auto install for a fresh mac for everything I use right of the bat. Making moving work laptop easy AF.
 
 ## Install
 
